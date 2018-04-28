@@ -1,0 +1,245 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* 第一个板块 */
+.bgimg{
+    background: url('../images/img_toutu.png') no-repeat;
+    width: 100%;
+    height: 49.7vw;
+    background-size: 100%;
+}
+.bgimg p{
+    color: #fff;
+    margin: 0;
+}
+.bgimg .logo{
+    letter-spacing: 5px;
+}
+.bgimg .magtop{
+    margin-top: 20px;
+}
+.bgimg .font-p1{
+    font-size: 55px
+}
+.bgimg .font-p2{
+    font-size: 30px
+}
+.bgimg .top{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 13vw;
+}
+.bgimg .mautos{
+    text-align: center;
+    margin-top: 10px;
+}
+.bgimg .mauto{
+    display: inline-block;
+    text-align: center;
+    padding: 16px 43px;
+    border: 1px solid #fff;
+    font-size: 26px;
+}
+/* 第二个板块 样式 */
+.content{
+    height: 844px;
+    color: #fff;
+    background: #3d414c;
+}
+.content .top{
+    margin-top: 133px;
+}
+.content .font-p3{
+    font-size: 24px;
+}
+.content .mar{
+    margin-top: 60px;
+}
+.content .lefts{
+    /* float: left; */
+    display: inline-block;
+}
+.content .middle{
+    display: inline-block;
+}
+.content .img-one{
+    position: relative;
+    top: -253px;
+    left: 52px;
+    height: 318px;
+}
+.content .img-two{
+    position: relative;
+    top: 294px;
+    left: 36px;
+    height: 557px;
+}
+.content .rights{
+    display: inline-block;
+    height: 450px;
+    width: 100%;
+}
+.content .tex{
+    width: 475px;
+    /* margin-left: 190px; */
+    position: relative;
+    top: 30px;
+}
+.content .distribution{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* left: 169px; */
+    margin-top: 159px;
+}
+.content .distribution img{
+    width: 42px;
+    height: 42px;
+    margin-bottom: 20px;
+}
+.content .distribution div p{
+    width: 41px;
+    background: #68a8fc;
+    padding: 14px;
+    height: 349px;
+}
+/*第三个板块 样式*/
+.about .title{
+	text-align: center;
+	color: #666;
+}
+.about .top{
+    margin-top: 60px;
+}
+.about .xian{
+    width: 136px;
+    height: 2px;
+    background-color: #72adfc;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.about .bold{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0;
+}
+.about .title .yuanquan{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 40px;
+    background-color: #333;
+}
+.about .dvs{
+    margin: 0  auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+.about .dvs div{
+    width: 662px;
+    padding: 22px;
+    border: 1px solid #ddd;
+    padding-left: 66px;
+}
+.about .dvs div .titles{
+    width: 378px;
+    display: inline-block;
+    padding: 0;
+    border: none;
+    color: #666;
+}
+.about .dvs div .titles p{
+    color: #666;
+}
+.about .dvs div img{
+    position: relative;
+    top: -41px;
+    width: 85px;
+    height: 84px;
+}
+.about .rowtwo{
+    margin-top:20px; 
+}
+.about .bottom{
+    margin-top: 20px;
+}
+.about .bottom img{
+    width: 457px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+.about .yuanjing{
+    position: relative;
+    color: #fff;
+    margin: 0 auto;
+}
+.about .yuanjing img{
+    margin-top: -4px;
+    width: 100%;
+}
+.about .yuanjing .text-pos{
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    left: 15.6%;
+    width: 72vw;
+    margin-top: 15%;
+}
+
+.contact .text p{
+    width: 647px;
+    background-color: #f5f5f5;
+    padding: 14px 30px;
+}
+.contact #weizhi{
+    width: 100%;
+    height: 380px;
+}
+.contact .dizhi{
+    height: 128px;
+}
+
+/* 页脚 */
+.footer{
+    margin-top: 30px;
+}
+.footer p{
+    text-align: center;
+    padding: 20px 0; 
+    background-color: #3d414c;
+    color: #aeafaf;
+}
+
+/* 媒体查询  */
+@media screen and (max-width:980px){
+    .content .img-one {
+        position: relative;
+        top: -481px;
+        left: 219px;
+    }
+    .content .img-two {
+        position: relative;
+        top: -16px;
+        left: 203px;
+    }
+    .about .dvs div .titles {
+        width: 18vw;
+        display: inline-block;
+        padding: 0;
+        border: none;
+    }
+    .about .dvs div{
+        padding-left: 36px;
+    }
+}
+@media (min-width: 1200px){
+   .container {
+    width: 1398px;
+} 
+}
