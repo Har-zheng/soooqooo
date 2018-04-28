@@ -1,0 +1,32 @@
+.content  .dv-left{
+    padding: 15px;
+    width: 400px;;
+}
+.content  .dv-left .spn{
+    font-size: 30px;
+}
+.content  .dv-left .active{
+    color: #4e7af5;
+}
+.content  .dv-left .title{
+    padding: 20px 0;
+}
+.content  .dv-left table tr{
+    text-align: center;
+}
+.content  .dv-left table th{
+    text-align: center;
+}
+.content .list {
+    position: relative;
+}
+.content .list .xian{
+    width: 400px;
+    height: 1px;
+    display: inline-block;
+    background-color: #CCC; 
+    position: absolute;
+    top: 52px;
+    left: -15px;
+
+}
