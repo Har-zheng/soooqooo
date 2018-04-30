@@ -19,7 +19,8 @@
                 <span class="spn">项目</span>
 
             </div>
-                <div class="list">
+            <div id="tbyone">
+                <div class="list" id="tbyones">
                     <i class="xian"></i>
                     <table style="border-collapse:separate; border-spacing:0px 24px;">
                         <thead>
@@ -31,8 +32,8 @@
                             </tr>
                            
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody class="tby" onclick="clicks()">
+                            <tr id="details">
                                 <td> <span class="actives spn"></span> 施工准备</td>
                                 <td>15天</td>
                                 <td>2018-4-10</td>
@@ -107,6 +108,97 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+            <div class="tbytwo" id="tbytwo">
+                <div class="list" id="tbytwos">
+                        <i class="xian"></i>
+                        <table style="border-collapse:separate; border-spacing:0px 24px;">
+                            <thead>
+                                <tr>
+                                    <th>项目名称</th>
+                                    <th>工期</th>
+                                    <th>开始时间</th>
+                                    <th>结束时间</th> 
+                                </tr>
+                               
+                            </thead>
+                            <tbody class="tby" onclick="clicks()">
+                                <tr id="details">
+                                    <td> <span class="actives spn"></span> 施工准备</td>
+                                    <td>15天</td>
+                                    <td>2018-4-10</td>
+                                    <td>2018-4-25</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spn"></span> 施工准备</td>
+                                    <td>15天</td>
+                                    <td>2018-4-10</td>
+                                    <td>2018-4-25</td>
+                                </tr>
+                                <tr>
+                                        <td><span class="spn"></span>施工准备</td>
+                                        <td>15天</td>
+                                        <td>2018-4-10</td>
+                                        <td>2018-4-25</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="spn"></span>施工准备</td>
+                                        <td>15天</td>
+                                        <td>2018-4-10</td>
+                                        <td>2018-4-25</td>
+                                    </tr>
+                                <tr>
+                                    <td><span class="spn"></span>施工准备</td>
+                                    <td>15天</td>
+                                    <td>2018-4-10</td>
+                                    <td>2018-4-25</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spn"></span>施工准备</td>
+                                    <td>15天</td>
+                                    <td>2018-4-10</td>
+                                    <td>2018-4-25</td>
+                                </tr>
+                                <tr>
+                                        <td><span class="spn"></span>施工准备</td>
+                                        <td>15天</td>
+                                        <td>2018-4-10</td>
+                                        <td>2018-4-25</td>
+                                </tr>
+                                    <tr>
+                                        <td><span class="spn"></span>施工准备</td>
+                                        <td>15天</td>
+                                        <td>2018-4-10</td>
+                                        <td>2018-4-25</td>
+                                    </tr>
+                                <tr>
+                                    <td><span class="spn"></span>施工准备</td>
+                                    <td>15天</td>
+                                    <td>2018-4-10</td>
+                                    <td>2018-4-25</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="spn"></span>施工准备</td>
+                                    <td>15天</td>
+                                    <td>2018-4-10</td>
+                                    <td>2018-4-25</td>
+                                </tr>
+                                <tr>
+                                        <td><span class="spn"></span>施工准备</td>
+                                        <td>15天</td>
+                                        <td>2018-4-10</td>
+                                        <td>2018-4-25</td>
+                                </tr>
+                                <tr>
+                                        <td><span class="spn"></span>施工准备</td>
+                                        <td>15天</td>
+                                        <td>2018-4-10</td>
+                                        <td>2018-4-25</td>
+                               </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>       
                 <div class="dibu">
                     <span class="tuichu"><a href="../index.html"><img src="../images/icon_er.svg" alt=""></a></span>
                     <span class="tianjia" data-toggle="modal" data-target=".bs-example-modal-lg">添加任务</span>
@@ -654,87 +746,579 @@
     </div>
 
 
-    <!-- 模态框  -->
-    <div class="modal fade bs-example-modal-lg tasks" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                    <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body" style="padding:0 50px;">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>任务名称</p>
+    <!-- 模态框 添加任务  -->
+    
+    <div id="tinjone">
+        <div class="modal fade bs-example-modal-lg tasks" id="tinj"   tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg"  role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body" style="padding:0 50px;padding-top: 24px;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>任务名称</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12"><input type="text" class="inp"></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>时间区间</p>
+                            <div class="row">
+                                <div class="col-md-12"><input type="text" class="inp"></div>
                             </div>
-                        </div>
-                        <div class="row" style="margin-top: 10px;">
-                                <div class='col-md-3'>  
-                                        <div class="form-group"> 
-                                            <div class='input-group date' id='datetimepicker1'>  
-                                                <input type='text' class="form-control" />  
-                                                <span class="input-group-addon">  
-                                                    <span class="glyphicon glyphicon-calendar"></span>  
-                                                </span>  
-                                            </div>  
-                                        </div>  
-                                    </div>  
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>时间区间</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px;">
                                     <div class='col-md-3'>  
-                                        <div class="form-group"> 
-                                            <div class='input-group date' id='datetimepicker2'>  
-                                                <input type='text' class="form-control" />  
-                                                <span class="input-group-addon">  
-                                                    <span class="glyphicon glyphicon-calendar"></span>  
-                                                </span>  
+                                            <div class="form-group"> 
+                                                <div class='input-group date datetimepicker1' id='datetimepicker1'>  
+                                                    <input type='text' class="form-control" />  
+                                                    <span class="input-group-addon">  
+                                                        <span class="glyphicon glyphicon-calendar"></span>  
+                                                    </span>  
+                                                </div>  
                                             </div>  
                                         </div>  
-                                    </div>  
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>角色选择</p>
+                                        <div class='col-md-3'>  
+                                            <div class="form-group"> 
+                                                <div class='input-group date datetimepicker2' id='datetimepicker2'>  
+                                                    <input type='text' class="form-control" />  
+                                                    <span class="input-group-addon">  
+                                                        <span class="glyphicon glyphicon-calendar"></span>  
+                                                    </span>  
+                                                </div>  
+                                            </div>  
+                                        </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>角色选择</p>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 jiaose">
+                                    <span>开发</span>
+                                    <span>安卓</span>
+                                    <span>UI</span>
+                                    <span>前端</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 bjtitle">
+                                    <span>正文</span>
+                                    <span> <img src="../images/icon_fujian.svg" alt=""> 添加附件</span>
+                                    <span> <img src="../images/icon_tupian.svg" alt=""> 图片</span>
+                                    <span> <img src="../images/icon_fh.svg" alt=""> 文档</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 box">
+                                        <textarea class="texta" name="" id="" cols="" rows=""></textarea>
+                                    
+                                    <div class="anniu">
+                                        <a href="../html/home.html"><span> 发布</span></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-
-                        </div>
-                    </div>
-              </div>
+                    
+                </div>
+                </div>
             </div>
-          </div>
+    </div>
+<!-- 模态框 添加项目 -->
+<div id="xamone">
+          <div class="modal fade bs-example-modal-lg tasks" id="xam"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg"  role="document">
+                  <div class="modal-content">
+                        <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body" style="padding:0 50px;padding-top: 24px;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>项目名称</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"><input type="text" class="inp"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>时间区间</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px;">
+                                    <div class='col-md-3'>  
+                                            <div class="form-group"> 
+                                                <div class='input-group date datetimepicker1' id='datetimepicker1'>  
+                                                    <input type='text' class="form-control" />  
+                                                    <span class="input-group-addon">  
+                                                        <span class="glyphicon glyphicon-calendar"></span>  
+                                                    </span>  
+                                                </div>  
+                                            </div>  
+                                        </div>  
+                                        <div class='col-md-3'>  
+                                            <div class="form-group"> 
+                                                <div class='input-group date datetimepicker2' id='datetimepicker2'>  
+                                                    <input type='text' class="form-control" />  
+                                                    <span class="input-group-addon">  
+                                                        <span class="glyphicon glyphicon-calendar"></span>  
+                                                    </span>  
+                                                </div>  
+                                            </div>  
+                                        </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>角色选择</p>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 jiaose">
+                                    <span>开发</span>
+                                    <span>安卓</span>
+                                    <span>UI</span>
+                                    <span>前端</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p >参与人数</p>
+                                    <p class="p">
+                                        <input type="radio" name="radio" value="1">1人&nbsp;&nbsp;
+                                        <input type="radio" name="radio" value="2">2人&nbsp;&nbsp;
+                                        <input type="radio" name="radio" value="3">3人&nbsp;&nbsp;
+                                        <input type="radio" name="radio" value="4">4人&nbsp;&nbsp;
+                                    </p>
+                                    <p>选择类别</p>
+                                    <p class="p">
+                                        <input type="radio" name="radio" value="a">项目
+                                        <input type="radio" name="radio" value="b">模块
+                                    </p>
+                                    <p>模块归属</p>
+                                    <p class="p">
+                                        <input type="radio" name="radio" value="c">xx项目
+                                        <input type="radio" name="radio" value="e">web页面视觉优化
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 bjtitle">
+                                    <span>正文</span>
+                                    <span> <img src="../images/icon_fujian.svg" alt=""> 添加附件</span>
+                                    <span> <img src="../images/icon_tupian.svg" alt=""> 图片</span>
+                                    <span> <img src="../images/icon_fh.svg" alt=""> 文档</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 box">
+                                        <textarea class="texta" name="" id="" cols="" rows=""></textarea>
+                                    
+                                    <div class="anniu">
+                                        <a href="../html/home.html"><span> 发布</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                  </div>
+                </div>
+              </div>
+    </div>
+    <!--  模态框   任务列表详情查看 -->
+<div id="popupone">
+        <div class="model-custom model-customs" id="popupones">
+                <div class="modal-content modal-content-custom">
+                        <div class="modal-header header">
+                                <button onclick="btn()" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <div class="col-md-12">
+                                    <p> <span>任务名称</span> 开发工作计划</p>
+                                    <p><span>开始时间</span> 2018-4-10</p>
+                                    <p><span>结束时间</span> 2018-4-15</p>
+                                    <p><span>任务期限</span> 5天</p>
+                                    <p><span>任务角色</span> 开发</p>
+                                </div>
+                            </div>
+                        <div class="modal-body" style="padding:0 50px;padding-top: 24px;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="box">
+                                        <p>[本周完成工作内容]</p>
+                                        <p>1,配合违章查询的业务修改</p>
+                                        <P>2,解决Android7+以上版本更新失败的问题</P>
+                                        <P>3,解决驾驶证输入页的错误提示</P>
+                                        <P>4,在主页增加网络状态提示</P>
+                                        <P>5,分离未处理的违章记录</P>
+                                        <p>6,调研图片点击全屏预览的技术实现</p>
+                                        <p>[本周发布的版本]</p>
+                                        <p>v1.2.13</p>
+                                        <p>Change Log:</p>
+                                        <p>1,解决Android7+以上版本更新失败的问题</p>
+                                        <p>2,增加网络状态提示</p>
+                                        <p>3,修正一些小的错误，犯错的程序猿已经祭天 </p>
+                                        <p>[下周计划完成工作内容]</p>
+                                        <p>1,根据需求调整开发计划;2,其他计划外开发;=========</p>
+                                        <p></p>
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                    
+                                    <div class="anniu">
+                                    <span class="xiug"onclick="xiugai()" >修改</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+                <!-- 修改页 -->
+                <div class="modal-content modal-modifys">
+                        <div class="modal-header">
+                                <button onclick="btn()" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body" style="padding:0 50px;padding-top: 24px;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>任务名称</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"><input type="text" class="inp" value="开发工作计划"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>时间区间</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px;">
+                                    <div class='col-md-3'>  
+                                            <div class="form-group"> 
+                                                <div class='input-group date datetimepicker1' id='datetimepicker1'>  
+                                                    <input type='text' class="form-control" value="2018-4-10"/>  
+                                                    <span class="input-group-addon">  
+                                                        <span class="glyphicon glyphicon-calendar"></span>  
+                                                    </span>  
+                                                </div>  
+                                            </div>  
+                                        </div>  
+                                        <div class='col-md-3'>  
+                                            <div class="form-group"> 
+                                                <div class='input-group date datetimepicker2' id='datetimepicker2'>  
+                                                    <input type='text' class="form-control" value="2018-4-15"/>  
+                                                    <span class="input-group-addon">  
+                                                        <span class="glyphicon glyphicon-calendar"></span>  
+                                                    </span>  
+                                                </div>  
+                                            </div>  
+                                        </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>角色选择</p>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 jiaose">
+                                    <span>开发</span>
+                                    <span>安卓</span>
+                                    <span>UI</span>
+                                    <span>前端</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 bjtitle">
+                                    <span>正文</span>
+                                    <span> <img src="../images/icon_fujian.svg" alt=""> 添加附件</span>
+                                    <span> <img src="../images/icon_tupian.svg" alt=""> 图片</span>
+                                    <span> <img src="../images/icon_fh.svg" alt=""> 文档</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                        <div class="box">
+                                                <p>[本周完成工作内容]</p>
+                                                <p>1,配合违章查询的业务修改</p>
+                                                <P>2,解决Android7+以上版本更新失败的问题</P>
+                                                <P>3,解决驾驶证输入页的错误提示</P>
+                                                <P>4,在主页增加网络状态提示</P>
+                                                <P>5,分离未处理的违章记录</P>
+                                                <p>6,调研图片点击全屏预览的技术实现</p>
+                                                <p>[本周发布的版本]</p>
+                                                <p>v1.2.13</p>
+                                                <p>Change Log:</p>
+                                                <p>1,解决Android7+以上版本更新失败的问题</p>
+                                                <p>2,增加网络状态提示</p>
+                                                <p>3,修正一些小的错误，犯错的程序猿已经祭天 </p>
+                                                <p>[下周计划完成工作内容]</p>
+                                                <p>1,根据需求调整开发计划;2,其他计划外开发;=========</p>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                            </div>
+                                    
+                                    <div class="anniu">
+                                        <span id="baoc">保存</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+        </div>
+</div>
+ <!--  模态框  项目列表详情查看 -->
+ <div id="popup">
+        <div class="model-custom model-customs" id="popups">
+                <div class="modal-content modal-content-custom">
+                        <div class="modal-header header">
+                                <button onclick="btn()" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <div class="col-md-12">
+                                    <p> <span>项目名称</span> 开发工作计划</p>
+                                    <p><span>参与人数</span> 4</p>
+                                    <p><span>开始时间</span> 2018-4-10</p>
+                                    <p><span>结束时间</span> 2018-4-15</p>
+                                    <p><span>项目工期</span> 15</p>
+                                </div>
+                            </div>
+                        <div class="modal-body" style="padding:0 50px;padding-top: 24px;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                        <p class="jindu">项目进度<progress max="100" value="60" id="pgs"></progress>60%</p>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div class="box">
+                                        <p>[本周完成工作内容]</p>
+                                        <p>1,配合违章查询的业务修改</p>
+                                        <P>2,解决Android7+以上版本更新失败的问题</P>
+                                        <P>3,解决驾驶证输入页的错误提示</P>
+                                        <P>4,在主页增加网络状态提示</P>
+                                        <P>5,分离未处理的违章记录</P>
+                                        <p>6,调研图片点击全屏预览的技术实现</p>
+                                        <p>[本周发布的版本]</p>
+                                        <p>v1.2.13</p>
+                                        <p>Change Log:</p>
+                                        <p>1,解决Android7+以上版本更新失败的问题</p>
+                                        <p>2,增加网络状态提示</p>
+                                        <p>3,修正一些小的错误，犯错的程序猿已经祭天 </p>
+                                        <p>[下周计划完成工作内容]</p>
+                                        <p>1,根据需求调整开发计划;2,其他计划外开发;=========</p>
+                                        <p></p>
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                    
+                                    <div class="anniu">
+                                    <span class="xiug" onclick="xiugai()">修改</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+                <!-- 修改页 -->
+                <div class="modal-content modal-modifys">
+                        <div class="modal-header">
+                                <button onclick="btn()" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body" style="padding:0 50px;padding-top: 24px;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>任务名称</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"><input type="text" class="inp" value="开发工作计划"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>时间区间</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px;">
+                                    <div class='col-md-3'>  
+                                            <div class="form-group"> 
+                                                <div class='input-group date datetimepicker1' id='datetimepicker1'>  
+                                                    <input type='text' class="form-control" value="2018-4-10"/>  
+                                                    <span class="input-group-addon">  
+                                                        <span class="glyphicon glyphicon-calendar"></span>  
+                                                    </span>  
+                                                </div>  
+                                            </div>  
+                                        </div>  
+                                        <div class='col-md-3'>  
+                                            <div class="form-group"> 
+                                                <div class='input-group date datetimepicker2' id='datetimepicker2'>  
+                                                    <input type='text' class="form-control" value="2018-4-15"/>  
+                                                    <span class="input-group-addon">  
+                                                        <span class="glyphicon glyphicon-calendar"></span>  
+                                                    </span>  
+                                                </div>  
+                                            </div>  
+                                        </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>角色选择</p>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 jiaose">
+                                    <span>开发</span>
+                                    <span>安卓</span>
+                                    <span>UI</span>
+                                    <span>前端</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 bjtitle">
+                                    <span>正文</span>
+                                    <span> <img src="../images/icon_fujian.svg" alt=""> 添加附件</span>
+                                    <span> <img src="../images/icon_tupian.svg" alt=""> 图片</span>
+                                    <span> <img src="../images/icon_fh.svg" alt=""> 文档</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                        <div class="box">
+                                                <p>[本周完成工作内容]</p>
+                                                <p>1,配合违章查询的业务修改</p>
+                                                <P>2,解决Android7+以上版本更新失败的问题</P>
+                                                <P>3,解决驾驶证输入页的错误提示</P>
+                                                <P>4,在主页增加网络状态提示</P>
+                                                <P>5,分离未处理的违章记录</P>
+                                                <p>6,调研图片点击全屏预览的技术实现</p>
+                                                <p>[本周发布的版本]</p>
+                                                <p>v1.2.13</p>
+                                                <p>Change Log:</p>
+                                                <p>1,解决Android7+以上版本更新失败的问题</p>
+                                                <p>2,增加网络状态提示</p>
+                                                <p>3,修正一些小的错误，犯错的程序猿已经祭天 </p>
+                                                <p>[下周计划完成工作内容]</p>
+                                                <p>1,根据需求调整开发计划;2,其他计划外开发;=========</p>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                            </div>
+                                    
+                                    <div class="anniu">
+                                        <span id="baoc">保存</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+        </div>
+</div>
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/vue.js"></script>
     <script src="../js/script.js"></script>
     
     <script src="../js/bootstrap-datetimepicker.min.js"></script>
     <script src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
     <script src="../js/moment-with-locales.js"></script>
     <script>
+        var temp = $('#tinj');
+        var temps = $('#xam');
+        
+        var tab = $("#tbyones");
+        var tabs = $("#tbytwos");
+        
+        var pup = $('#popupones');
+        var pups = $('#popups');
+        console.log(tabs);
+
+        $('#xam').remove();
+       
+        $("#tbytwos").remove();
+
+        $('#popups').remove();
+        
         $(".title .spn").click(function(){
             $(".title span").removeClass('active');
             $(this).addClass('active');
+
+            if($(this)[0].innerHTML == "项目"){
+                $('.tianjia').text("添加项目");
+                
+                $('#tinj').remove();
+
+                $("#xamone").html(temps);
+                
+                $("#tbyones").remove();
+
+                $("#tbytwo").html(tabs);
+
+                $("#popupones").remove();
+
+                $("#popup").html(pups);
+
+                
+                console.log($("#tbytwo"));
+                // var pg = document.getElementById('pgs');
+                // setInterval(function(e){
+                // if(pg.value!=100) pg.value++;
+                // else pg.value = 0;
+                //  },100);
+
+            }else{
+                $("#tinjone").html(temp);
+                $('.tianjia').text("添加任务");
+                $('#xam').remove();
+                
+                $("#tbytwos").remove();
+
+                $("#tbyone").html(tab);
+
+                $("#pup").remove();
+
+                $("#popup").html(pups);
+            }
         });
+
+        function clicks(){
+            console.log("输出");
+        $(".model-customs").css('display','block');
+        $('.modal-content-custom').css('display','block');
+            // $('model-custom').fadeOut(1000);
+        }
+
+        // $(".tby tr").click(function(){
+        //     console.log("输出");
+        // $(".model-customs").css('display','block');
+        // $('.modal-content-custom').css('display','block');
+        //     // $('model-custom').fadeOut(1000);
+        // });
+        function btn(){
+            $('.model-customs').css('display','none');
+        };
+        function xiugai(){
+            $('.modal-content-custom').css('display','none');
+            $('.modal-modifys').css('display','block');
+        };
+        $('#baoc').click(function(){
+            $('.model-customs').css('display','none');
+            $('.modal-modifys').css('display','none');
+        });
+
+
+
+        
         //设置日期时间控件
         $(function () {  
-            var picker1 = $('#datetimepicker1').datetimepicker({  
+            var picker1 = $('.datetimepicker1').datetimepicker({  
                 format: 'yyyy-mm-dd',  
                 locale: moment.locale('zh-cn'),
                 language: 'zh-CN',//中文，需要引用zh-CN.js包
             });  
-            var picker2 = $('#datetimepicker2').datetimepicker({  
+            var picker2 = $('.datetimepicker2').datetimepicker({  
                 format: 'yyyy-mm-dd',  
                 locale: moment.locale('zh-cn'),
                 language: 'zh-CN',//中文，需要引用zh-CN.js包
@@ -748,7 +1332,9 @@
                 picker1.data('DateTimePicker').maxDate(e.date);  
             });  
         }); 
- 
+        
+        
+   
     </script>
 </body>
 </html>
