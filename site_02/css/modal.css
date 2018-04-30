@@ -146,13 +146,37 @@
     resize: none;
 }
 /* 拷贝进度条 */
-#pgs{
+.pgs{
     color: #33F487;
     background: #33F487;
     border-radius: 69px;
     width: 84%;
     margin: 0 10px;
 }
+.pgst{
+	width: 66%;
+}
 .jindu{
     margin: 15px;
+}
+.conten{
+	padding: 6px;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	}
+.conten div{
+	width: 25%;
+	border: 1px solid #ccc;
+	padding: 6px;
+}
+.conten div p{
+	margin-bottom: 5px;
+}
+#popup .p{
+	margin: 10px 0;
+}
+.spjian img{
+width: 12px;
 }
